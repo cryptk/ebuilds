@@ -1,6 +1,5 @@
 # Copyright 2013 Christopher Jason Camisa
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI=5
 inherit eutils git-2
@@ -11,8 +10,9 @@ LICENSE="MPL-1.1"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
-DEPEND=">=sys-libs/zlib-1.2.7"
-RDEPEND="${DEPEND}"
+DEPEND=">=sys-libs/zlib-1.2.7
+	>=dev-vcs/git-1.8.1.5"
+RDEPEND=">=sys-libs/zlib-1.2.7"
 
 src_install() {
 
